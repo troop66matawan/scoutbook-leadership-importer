@@ -31,7 +31,7 @@ exports.scoutbook_leadership_importer = function (scouts, importPath) {
                 const endDate = leadershipPosition['End Date'];
 
 
-                const scoutKey = bsaId + '_' + firstName + '_' + middleName + '_' + lastName;
+                const scoutKey = bsaId + '_' + firstName  + '_' + lastName;
                 let scout;
                 if (scouts[scoutKey]) {
                     scout = scouts[scoutKey];
