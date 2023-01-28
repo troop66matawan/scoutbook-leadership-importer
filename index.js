@@ -23,9 +23,9 @@ exports.scoutbook_leadership_importer = function (scouts, importPath) {
         .then(function (importedData) {
             importedData.forEach(leadershipPosition => {
                 const bsaId = leadershipPosition['BSA Member ID'];
-                const firstName = leadershipPosition['First Name'];
-                const middleName = leadershipPosition['Middle Name'];
-                const lastName = leadershipPosition['Last Name'];
+                const firstName = leadershipPosition['First Name'].trim();
+                const middleName = leadershipPosition['Middle Name'].trim();
+                const lastName = leadershipPosition['Last Name'].trim();
                 const positionName = leadershipPosition['Position'];
                 const startDate = leadershipPosition['Start Date'];
                 const endDate = leadershipPosition['End Date'];
